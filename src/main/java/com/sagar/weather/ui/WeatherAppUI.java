@@ -81,8 +81,4 @@ public class WeatherAppUI extends Application {
 
     }
 
-    public static void main(String[] args) {
-        launch(args);
-    }
-
 }
