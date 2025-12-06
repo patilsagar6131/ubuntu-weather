@@ -43,7 +43,7 @@ public class WeatherViewModel {
     public String formatTime(long unix, long timeZoneOffset) {
         long adjusted = unix + timeZoneOffset;
         Instant instant = Instant.ofEpochSecond(adjusted);
-        return DateTimeFormatter.ofPattern("HH:mm a").withZone(ZoneId.of("UTC")).format(instant);
+        return DateTimeFormatter.ofPattern("hh:mm a").withZone(ZoneId.of("UTC")).format(instant);
     }
 
     public String getIconPath() {
